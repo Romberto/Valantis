@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+h1, 
+.filtres__title,
+.spiner {
+    color: #f8aff8
+}
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 5;
+    width: 100%;
+    background-color: #212529 !important; 
+}
+
+.active{
+    background-color: #f8aff8 !important;
+}
+
+.product-card{
+    height: 235px;
+    background-color: #f8aff8 !important;
+}
+.filters__block{
+    padding: 5px;
+    position: relative;
+}
+.filters__wrapper{
+    max-width: 300px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 500;
+    background-color: #353d44;
+    border: 1px solid #fff;
+    padding:5px;
+    border-radius: 5px;
+    transform: translateY(-400px);
+    transition: transform 0.3s ease; 
+}
+
+.visible{
+    transform:translateY(0)
+}
+
+.popupBtn{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    z-index: 10;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background-image: url('../img/filter-svgrepo-com.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.closePopup{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/close-circle-svgrepo-com.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+
+
+
+.form-select{
+    background-color:  #f8aff8;
+}
+.hidden{
+    display: none;
+}
+.name.active,
+.price.active {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.filter_selected{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 3px;
+    background-color: #353d44;
+}
+
+.content h3,
+.filters__wrapper p{
+    color: #f8aff8;
+}
+
+.btn{
+    background-color: #f8aff8;
+}
